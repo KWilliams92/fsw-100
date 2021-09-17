@@ -1,0 +1,19 @@
+#heading {
+    color: blue;
+}
+
+table, th, td, tr {
+    border: 1px solid black;
+}
+
+aside {
+    text-align: right;
+}
+
+img {
+    float: right; 
+    width: 500px; 
+    padding: 10px;
+    border: 5px dashed orange;
+    
+}
