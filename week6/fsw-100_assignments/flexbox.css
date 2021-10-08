@@ -1,0 +1,82 @@
+html, body {
+    margin-left: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid black;
+    margin: 10px 510px;
+}
+
+.container > div:nth-child(1) {
+    background-color: brown;
+    height: 70px;
+    width: 70px;
+}
+.container > div:nth-child(2) {
+    background-color: burlywood;
+    height: 70px;
+    width: 70px;
+}
+.container > div:nth-child(3) {
+    background-color: cadetblue;
+    height: 70px;
+    width: 70px;
+}
+.container > div:nth-child(4) {
+    background-color: olivedrab;
+    height: 70px;
+    width: 70px;
+}
+.container > div:nth-child(5) {
+    background-color:rosybrown;
+    height: 70px;
+    width: 70px;
+    justify-content: space-evenly;
+}
+.container > div:nth-child(6) {
+    background-color: darkslategrey;
+    height: 70px;
+    width: 70px;
+}
+
+.container > div:nth-child(1):hover {
+    background-color: orchid;
+    border-radius: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container > div:nth-child(2):hover {
+    border: 5px dashed brown;
+    box-shadow: chartreuse 5px 10px inset;
+    padding: 10px;
+}
+.container > div:nth-child(3):hover {
+    height: 90px;
+    width: 90px;
+    font-size: x-large;
+    opacity: 50%;
+}
+.container > div:nth-child(4):hover {
+    background-color: darkgoldenrod;
+    height: 90px;
+    width: 90px;
+    animation: mymove 5s infinite;
+}
+    @keyframes mymove {
+        from {background-color: darkgoldenrod;}
+        to {background-color: plum;}
+      }
+.container > div:nth-child(5):hover {
+    border-radius: 13%;
+    box-shadow: fuchsia 5px 5px 5px 5px;
+    color: blanchedalmond;
+}
+.container > div:nth-child(6):hover {
+    opacity: 35%;
+    text-decoration: blue underline;
+    margin: 10px;
+}
