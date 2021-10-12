@@ -1,53 +1,75 @@
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr ;
-    grid-template-areas: "header header header header"
-    "cont1 cont2 cont3 cont4"
-    "sidebar sidebar main main"
-    "nav nav nav footer";
-    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cont1 cont1 cont2 cont2"
+    "cont3 cont4 cont4 cont4"
+    "cont5 cont5 cont5 cont5";
+    grid-gap: 1rem;
 }
-header {
-    background: #F5C6D6;
-    grid-area: header;
+#cont1 {
+    background: darkblue;
+    grid-area: cont1;
+    border-radius: 10px;
 }
-#cont1, #cont2, #cont3, #cont4 {
-    background: #EE2E84;
-    grid-area: cont1, cont2, cont3, cont4;
+#cont2 {
+    background: darkcyan;
+    grid-area: cont2;
+    grid-row: 1;
+    border-radius: 10px;
 }
-#sidebar {
-    background: #85CFD8;
-    grid-area: sidebar;
+#cont3 {
+    background: darkgoldenrod;
+    grid-area: cont3;
+    border-radius: 10px;
 }
-main {
-    background: #85CFD8;
-    grid-area: main;
+#cont4 {
+    background: darkgray;
+    grid-area: cont4;
+    border-radius: 10px;
 }
-nav {
-    background: #8DC63F;
-    grid-area: nav;
-}
-footer {
-    background: #E76E34;
-    grid-area: footer;
+#cont5 {
+    background: darkgreen;
+    grid-area: cont5;
+    border-radius: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
-        grid-gap: 0.1rem;
-        grid-template-areas: 
-        "header"
-        "cont1"
-        "cont2"
-        "cont3"
-        "cont4"
-        "sidebar"
-        "main"
-        "nav"
-        "footer";
-    }
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: 75vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "h2 h2 h3 h3"
+    "h2 h2 h4 h5";
+    grid-gap: 1rem;
+}
+h1 {
+    background: darkkhaki;
+    grid-area: h1;
+    border-radius: 10px;
+}
+h2 {
+    background: darkmagenta;
+    grid-area: h2;
+    border-radius: 10px;
+}
+h3 {
+    background: darkolivegreen;
+    grid-area: h3;
+    border-radius: 10px;
+}
+h4 {
+    background: darkred;
+    grid-area: h4;
+    border-radius: 10px;
+}
+h5 {
+    background: darkslategray;
+    grid-area: h5;
+    border-radius: 10px;
 }
