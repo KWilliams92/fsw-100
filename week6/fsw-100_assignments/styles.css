@@ -122,26 +122,27 @@ h3 {
     }
  }
  /*Tablet*/
- @media only screen and (min-device-width: 961px) {
+ @media only screen and (min-device-width: 961px) and (max-device-width: 1024px) {
      .grid-container { 
          grid-template-columns: 1fr 1fr;
          grid-template-rows: 1fr 1fr 1fr 1fr;
          grid-template-areas: 
-         "header header"
+         "nav nav"
          "sidebar sidebar"
          "cont1 main"
          "footer footer";
  }
-  }
-  /*Laptop*/
-  @media only screen and (min-device-width: 1025px){
-     .grid-container { 
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "nav nav nav nav"
-        "sidebar main main main"
-        "cont1 cont1 cont1 cont1"
-        "footer footer footer footer";
-     }
-  }
+}
+}
+/*Laptop*/
+@media only screen and (min-device-width: 1025px){
+   .grid-container { 
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "nav nav nav nav"
+      "sidebar main main main"
+      "cont1 cont1 cont1 cont1"
+      "footer footer footer footer";
+   }
+}
