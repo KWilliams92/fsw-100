@@ -15,10 +15,6 @@ a:hover {
     text-decoration: underline wavy;
     color: darkgrey;
 }
-nav {
-    text-align: center;
-    font-family: "Special Elite", sans-serif;
-}
 .contact-grid {
     display: grid;
     height: 100vh;
@@ -34,6 +30,7 @@ nav {
 nav {
     text-align: center;
     grid-area: nav;
+    font-family: "Special Elite", sans-serif;
 }
 .cont1 {
     text-align: center;
@@ -125,17 +122,42 @@ td {
     width: 100%;
     border-radius: 7px;
 }
-@media only screen and (max-width: 550px) {
-    .about-container {
+@media only screen and (min-device-width: 320px) and (max-device-width: 960px) {
+    .contact-grid { 
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 2fr 2fr 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
         grid-template-areas: 
         "nav"
         "header"
         "main"
         "sidebar"
         "cont1"
-        "cont2"
         "footer";
     }
-}
+ }
+ /*Tablet*/
+ @media only screen and (min-device-width: 961px) {
+    .contact-grid { 
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-areas: 
+         "nav nav nav nav"
+         "header header header header"
+         "main main main main"
+         "sidebar sidebar cont1 cont1"
+         "footer footer footer footer";
+     }
+  }
+  /*Laptop*/
+  @media only screen and (min-device-width: 1025px){
+    .contact-grid { 
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+    "nav nav nav"
+    "cont1 sidebar sidebar"
+    "main header header"
+    "main header header"
+    "footer footer footer";
+     }
+  }
