@@ -1,0 +1,76 @@
+html { 
+    background: url('https://images.unsplash.com/photo-1527672809634-04ed36500acd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZWFydGh8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  a {
+      text-decoration: none;
+      color: darkblue;
+  }
+  a:hover {
+      text-decoration: underline wavy darkblue;
+      color: #0fa;
+  }
+  nav {
+      text-align: center;
+      font-family: "Special Elite", sans-serif;
+  }
+.home-container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#welcome {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    color: #0fa;
+    text-shadow: 2px 5px darkblue;
+    margin-top: 2%;
+    text-align: center;
+}
+.home-container > h1 {
+    display: block;
+    font-size: 90px;
+    font-family: "Gloria Hallelujah", sans-serif;
+    margin-top: 2%;
+    text-shadow:
+    0 0 7px darkblue,
+    0 0 10px darkblue,
+    0 0 21px darkblue,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+p {
+    color: #0fa;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+button {
+    color: #0fa;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    background: darkblue;
+    border: none;
+}
+
+@media screen and (min-width: 601px) {
+    nav {
+      font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    nav {
+      font-size: 30px;
+    }
+  }
